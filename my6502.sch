@@ -1,0 +1,186 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 6502:W65C02S U?
+U 1 1 60087766
+P 4100 3400
+F 0 "U?" H 4075 4725 50  0000 C CNN
+F 1 "W65C02S" H 4075 4634 50  0000 C CNN
+F 2 "" H 4100 3400 50  0001 C CNN
+F 3 "" H 4100 3400 50  0001 C CNN
+	1    4100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60089649
+P 3700 5100
+F 0 "#PWR?" H 3700 4950 50  0001 C CNN
+F 1 "+5V" H 3715 5273 50  0000 C CNN
+F 2 "" H 3700 5100 50  0001 C CNN
+F 3 "" H 3700 5100 50  0001 C CNN
+	1    3700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60089E6B
+P 3700 5400
+F 0 "#PWR?" H 3700 5150 50  0001 C CNN
+F 1 "GND" H 3705 5227 50  0000 C CNN
+F 2 "" H 3700 5400 50  0001 C CNN
+F 3 "" H 3700 5400 50  0001 C CNN
+	1    3700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6008BAC0
+P 3700 5250
+F 0 "C?" H 3815 5296 50  0000 L CNN
+F 1 "100n" H 3815 5205 50  0000 L CNN
+F 2 "" H 3738 5100 50  0001 C CNN
+F 3 "~" H 3700 5250 50  0001 C CNN
+	1    3700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6008E5D6
+P 2600 2550
+F 0 "#PWR?" H 2600 2400 50  0001 C CNN
+F 1 "+5V" H 2615 2723 50  0000 C CNN
+F 2 "" H 2600 2550 50  0001 C CNN
+F 3 "" H 2600 2550 50  0001 C CNN
+	1    2600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3100 2600 3100
+Wire Wire Line
+	2600 3100 2600 2800
+Wire Wire Line
+	3500 2700 2600 2700
+Connection ~ 2600 2700
+Wire Wire Line
+	2600 2700 2600 2550
+Wire Wire Line
+	3500 2800 2600 2800
+Connection ~ 2600 2800
+Wire Wire Line
+	2600 2800 2600 2700
+Wire Wire Line
+	3500 4100 2600 4100
+Wire Wire Line
+	2600 4100 2600 3900
+Connection ~ 2600 3100
+Text Label 3250 3500 0    50   ~ 0
+CLK
+Wire Wire Line
+	3500 3500 3250 3500
+Wire Wire Line
+	3500 3900 2600 3900
+Connection ~ 2600 3900
+Wire Wire Line
+	2600 3900 2600 3100
+$Comp
+L power:+5V #PWR?
+U 1 1 6009B3E5
+P 3400 2300
+F 0 "#PWR?" H 3400 2150 50  0001 C CNN
+F 1 "+5V" V 3415 2428 50  0000 L CNN
+F 2 "" H 3400 2300 50  0001 C CNN
+F 3 "" H 3400 2300 50  0001 C CNN
+	1    3400 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6009C05C
+P 3400 2400
+F 0 "#PWR?" H 3400 2150 50  0001 C CNN
+F 1 "GND" V 3405 2272 50  0000 R CNN
+F 2 "" H 3400 2400 50  0001 C CNN
+F 3 "" H 3400 2400 50  0001 C CNN
+	1    3400 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 2400 3500 2400
+Wire Wire Line
+	3400 2300 3500 2300
+Wire Wire Line
+	3250 2600 3500 2600
+Text Label 3250 2600 0    50   ~ 0
+RESET
+$Comp
+L power:+5V #PWR?
+U 1 1 6009FE82
+P 1100 800
+F 0 "#PWR?" H 1100 650 50  0001 C CNN
+F 1 "+5V" H 1115 973 50  0000 C CNN
+F 2 "" H 1100 800 50  0001 C CNN
+F 3 "" H 1100 800 50  0001 C CNN
+	1    1100 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 600A01F1
+P 1100 1750
+F 0 "#PWR?" H 1100 1500 50  0001 C CNN
+F 1 "GND" H 1105 1577 50  0000 C CNN
+F 2 "" H 1100 1750 50  0001 C CNN
+F 3 "" H 1100 1750 50  0001 C CNN
+	1    1100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 600A08FF
+P 1100 1000
+F 0 "R?" H 1170 1046 50  0000 L CNN
+F 1 "R" H 1170 955 50  0000 L CNN
+F 2 "" V 1030 1000 50  0001 C CNN
+F 3 "~" H 1100 1000 50  0001 C CNN
+	1    1100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 600A175F
+P 1100 1450
+F 0 "SW?" V 1054 1598 50  0000 L CNN
+F 1 "SW_MEC_5G" V 1145 1598 50  0000 L CNN
+F 2 "" H 1100 1650 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1100 1650 50  0001 C CNN
+	1    1100 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 1750 1100 1650
+Wire Wire Line
+	1100 1250 1100 1200
+Wire Wire Line
+	1100 800  1100 850 
+Wire Wire Line
+	650  1200 1100 1200
+Connection ~ 1100 1200
+Wire Wire Line
+	1100 1200 1100 1150
+Text Label 650  1200 0    50   ~ 0
+RESET
+$EndSCHEMATC
