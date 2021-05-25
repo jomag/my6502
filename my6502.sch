@@ -3123,22 +3123,6 @@ Text Label 12050 5500 0    50   ~ 0
 D6
 Text Label 12050 5600 0    50   ~ 0
 D7
-Wire Bus Line
-	9200 800  9200 2150
-Wire Bus Line
-	6900 800  6900 2150
-Wire Bus Line
-	7300 800  7300 2850
-Wire Bus Line
-	4900 800  4900 2850
-Wire Bus Line
-	14000 900  14000 2550
-Wire Bus Line
-	9650 900  9650 3550
-Wire Bus Line
-	4200 800  4200 4950
-Wire Bus Line
-	11700 800  11700 5500
 $Comp
 L Connector_Generic:Conn_01x08 J1
 U 1 1 61DD6B1A
@@ -3161,4 +3145,149 @@ F 3 "~" H 12550 4300 50  0001 C CNN
 	1    12550 4300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:USB_B_Micro J4
+U 1 1 60B35F2D
+P 10150 6900
+F 0 "J4" H 10207 7367 50  0000 C CNN
+F 1 "USB_B_Micro" H 10207 7276 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 10300 6850 50  0001 C CNN
+F 3 "~" H 10300 6850 50  0001 C CNN
+	1    10150 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0163
+U 1 1 60B392C5
+P 10150 7400
+F 0 "#PWR0163" H 10150 7150 50  0001 C CNN
+F 1 "GND" H 10155 7227 50  0000 C CNN
+F 2 "" H 10150 7400 50  0001 C CNN
+F 3 "" H 10150 7400 50  0001 C CNN
+	1    10150 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 7300 10150 7400
+Wire Wire Line
+	10450 6700 10800 6700
+Text Label 10500 6700 0    50   ~ 0
+USBVCC
+$Comp
+L Device:R R12
+U 1 1 60BB1CFB
+P 10950 6700
+F 0 "R12" H 11020 6746 50  0000 L CNN
+F 1 "? (low res)" H 11020 6655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10880 6700 50  0001 C CNN
+F 3 "~" H 10950 6700 50  0001 C CNN
+	1    10950 6700
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D4
+U 1 1 60BBC9CB
+P 11200 6950
+F 0 "D4" V 11154 7030 50  0000 L CNN
+F 1 "D_Zener" V 11245 7030 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 11200 6950 50  0001 C CNN
+F 3 "~" H 11200 6950 50  0001 C CNN
+	1    11200 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11100 6700 11200 6700
+Wire Wire Line
+	11200 6700 11200 6800
+$Comp
+L power:GND #PWR0164
+U 1 1 60C904E5
+P 11200 7200
+F 0 "#PWR0164" H 11200 6950 50  0001 C CNN
+F 1 "GND" H 11205 7027 50  0000 C CNN
+F 2 "" H 11200 7200 50  0001 C CNN
+F 3 "" H 11200 7200 50  0001 C CNN
+	1    11200 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 7100 11200 7200
+$Comp
+L power:+5V #PWR0165
+U 1 1 60CCD1B2
+P 11200 6600
+F 0 "#PWR0165" H 11200 6450 50  0001 C CNN
+F 1 "+5V" H 11215 6773 50  0000 C CNN
+F 2 "" H 11200 6600 50  0001 C CNN
+F 3 "" H 11200 6600 50  0001 C CNN
+	1    11200 6600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 6600 11200 6700
+Connection ~ 11200 6700
+NoConn ~ 10450 6900
+NoConn ~ 10450 7000
+NoConn ~ 10450 7100
+NoConn ~ 10050 7300
+NoConn ~ 12450 6250
+$Comp
+L Device:R R13
+U 1 1 60E322F4
+P 11700 7000
+F 0 "R13" H 11770 7046 50  0000 L CNN
+F 1 "220" H 11770 6955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 11630 7000 50  0001 C CNN
+F 3 "~" H 11700 7000 50  0001 C CNN
+	1    11700 7000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 60E5E64D
+P 11500 6700
+F 0 "D5" H 11650 6650 50  0000 C CNN
+F 1 "LED" H 11500 6800 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 11500 6700 50  0001 C CNN
+F 3 "~" H 11500 6700 50  0001 C CNN
+	1    11500 6700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11200 6700 11350 6700
+Wire Wire Line
+	11650 6700 11700 6700
+Wire Wire Line
+	11700 6700 11700 6850
+$Comp
+L power:GND #PWR0166
+U 1 1 60F053B9
+P 11700 7200
+F 0 "#PWR0166" H 11700 6950 50  0001 C CNN
+F 1 "GND" H 11705 7027 50  0000 C CNN
+F 2 "" H 11700 7200 50  0001 C CNN
+F 3 "" H 11700 7200 50  0001 C CNN
+	1    11700 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 7150 11700 7200
+Wire Bus Line
+	9200 800  9200 2150
+Wire Bus Line
+	6900 800  6900 2150
+Wire Bus Line
+	7300 800  7300 2850
+Wire Bus Line
+	4900 800  4900 2850
+Wire Bus Line
+	14000 900  14000 2550
+Wire Bus Line
+	9650 900  9650 3550
+Wire Bus Line
+	4200 800  4200 4950
+Wire Bus Line
+	11700 800  11700 5500
+Text Notes -2500 600  0    50   ~ 0
+TODO:\n- Mounting holes\n- Check if any more 6502 pins\n    should be accessible (RDY? NMI?)\n- Validate all components! Not the least the USB conn.\n- Place all decoupler caps close to their IC's\n- Fancy silkscreen!\n- Is HLT connected anywhere?
 $EndSCHEMATC
