@@ -137,60 +137,31 @@ $EndComp
 $Comp
 L 74xx:74HC00 U1
 U 5 1 6018728D
-P 12150 8950
-F 0 "U1" H 12380 8996 50  0000 L CNN
-F 1 "74HC00" H 12380 8905 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 12150 8950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 12150 8950 50  0001 C CNN
-	5    12150 8950
+P 11900 8950
+F 0 "U1" H 12130 8996 50  0000 L CNN
+F 1 "74HC00" H 12130 8905 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 11900 8950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11900 8950 50  0001 C CNN
+	5    11900 8950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 6018D610
-P 11800 8950
-F 0 "C1" H 11650 9050 50  0000 L CNN
-F 1 "100n" V 11750 8700 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 11838 8800 50  0001 C CNN
-F 3 "~" H 11800 8950 50  0001 C CNN
-	1    11800 8950
+P 11500 8900
+F 0 "C1" H 11350 9000 50  0000 L CNN
+F 1 "100n" V 11450 8650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 11538 8750 50  0001 C CNN
+F 3 "~" H 11500 8900 50  0001 C CNN
+	1    11500 8900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11800 8800 11800 8450
+	11500 8450 11900 8450
 Wire Wire Line
-	11800 8450 12150 8450
+	11500 9050 11500 9450
 Wire Wire Line
-	11800 9100 11800 9450
-Wire Wire Line
-	11800 9450 12150 9450
-$Comp
-L power:+5V #PWR0113
-U 1 1 601B7EDC
-P 12150 8400
-F 0 "#PWR0113" H 12150 8250 50  0001 C CNN
-F 1 "+5V" H 12165 8573 50  0000 C CNN
-F 2 "" H 12150 8400 50  0001 C CNN
-F 3 "" H 12150 8400 50  0001 C CNN
-	1    12150 8400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12150 8400 12150 8450
-$Comp
-L power:GND #PWR0114
-U 1 1 601BA2BC
-P 12150 9500
-F 0 "#PWR0114" H 12150 9250 50  0001 C CNN
-F 1 "GND" H 12155 9327 50  0000 C CNN
-F 2 "" H 12150 9500 50  0001 C CNN
-F 3 "" H 12150 9500 50  0001 C CNN
-	1    12150 9500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12150 9500 12150 9450
-Connection ~ 12150 9450
+	11500 9450 11900 9450
 $Comp
 L power:+5V #PWR0115
 U 1 1 6025C0C3
@@ -506,7 +477,6 @@ F 3 "~" H 15150 9100 50  0001 C CNN
 	1    15150 9100
 	1    0    0    -1  
 $EndComp
-Connection ~ 12150 8450
 Wire Wire Line
 	2800 7200 2800 7250
 $Comp
@@ -539,13 +509,13 @@ Clock Module
 Text Notes 1450 7200 0    50   ~ 0
 Astable oscillator
 Wire Notes Line
-	11450 9800 11450 7800
+	8700 9800 8700 7800
 Wire Notes Line
-	11450 7800 15900 7800
+	8700 7800 15900 7800
 Wire Notes Line
 	15900 7800 15900 9800
 Wire Notes Line
-	15900 9800 11450 9800
+	15900 9800 8700 9800
 Text Notes 11550 8050 0    98   ~ 0
 Decoupling Capacitors
 Text Label 10050 3650 0    50   ~ 0
@@ -1656,7 +1626,7 @@ U 1 1 60B28047
 P 12100 1550
 F 0 "RV2" H 12000 1600 50  0000 R CNN
 F 1 "10k?" H 12000 1500 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 12100 1550 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 12100 1550 50  0001 C CNN
 F 3 "~" H 12100 1550 50  0001 C CNN
 	1    12100 1550
 	1    0    0    -1  
@@ -1849,7 +1819,7 @@ U 1 1 61207659
 P 12250 2000
 F 0 "RV3" H 12150 2050 50  0000 R CNN
 F 1 "10k?" H 12150 1950 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 12250 2000 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 12250 2000 50  0001 C CNN
 F 3 "~" H 12250 2000 50  0001 C CNN
 	1    12250 2000
 	1    0    0    1   
@@ -2727,8 +2697,8 @@ $Comp
 L 74xx:74HC00 U9
 U 5 1 60C17C42
 P 11050 8950
-F 0 "U9" H 11050 9275 50  0000 C CNN
-F 1 "74HC00" H 11050 9184 50  0000 C CNN
+F 0 "U9" H 11150 9300 50  0000 C CNN
+F 1 "74HC00" H 11050 8950 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 11050 8950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11050 8950 50  0001 C CNN
 	5    11050 8950
@@ -2775,8 +2745,8 @@ $Comp
 L 74xx:74HC00 U12
 U 5 1 60C78F3C
 P 10150 8950
-F 0 "U12" H 10150 9275 50  0000 C CNN
-F 1 "74HC00" H 10150 9184 50  0000 C CNN
+F 0 "U12" H 10300 9300 50  0000 C CNN
+F 1 "74HC00" H 10150 8950 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10150 8950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 10150 8950 50  0001 C CNN
 	5    10150 8950
@@ -2897,8 +2867,8 @@ $Comp
 L 74xx:74HC00 U17
 U 5 1 60E661A5
 P 9450 8950
-F 0 "U17" H 9650 9100 50  0000 C CNN
-F 1 "74HC00" H 9700 8800 50  0000 C CNN
+F 0 "U17" H 9600 9300 50  0000 C CNN
+F 1 "74HC00" H 9450 8950 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 9450 8950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9450 8950 50  0001 C CNN
 	5    9450 8950
@@ -3272,22 +3242,32 @@ F 3 "" H 11700 7200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11700 7150 11700 7200
+Text Notes -2500 600  0    50   ~ 0
+TODO:\n- Mounting holes\n- Check if any more 6502 pins\n    should be accessible (RDY? NMI?)\n- Validate all components! Not the least the USB conn.\n- Place all decoupler caps close to their IC's\n- Fancy silkscreen!\n- Is HLT connected anywhere?
+Wire Wire Line
+	11500 8750 11500 8450
+Wire Wire Line
+	11050 8450 11500 8450
+Connection ~ 11050 8450
+Connection ~ 11500 8450
+Wire Wire Line
+	11050 9450 11500 9450
+Connection ~ 11050 9450
+Connection ~ 11500 9450
+Wire Bus Line
+	9650 900  9650 3550
 Wire Bus Line
 	9200 800  9200 2150
 Wire Bus Line
-	6900 800  6900 2150
-Wire Bus Line
-	7300 800  7300 2850
+	14000 900  14000 2550
 Wire Bus Line
 	4900 800  4900 2850
 Wire Bus Line
-	14000 900  14000 2550
-Wire Bus Line
-	9650 900  9650 3550
+	6900 800  6900 2150
 Wire Bus Line
 	4200 800  4200 4950
 Wire Bus Line
 	11700 800  11700 5500
-Text Notes -2500 600  0    50   ~ 0
-TODO:\n- Mounting holes\n- Check if any more 6502 pins\n    should be accessible (RDY? NMI?)\n- Validate all components! Not the least the USB conn.\n- Place all decoupler caps close to their IC's\n- Fancy silkscreen!\n- Is HLT connected anywhere?
+Wire Bus Line
+	7300 800  7300 2850
 $EndSCHEMATC
