@@ -374,8 +374,12 @@ U 1 1 601E869A
 P 2800 8150
 F 0 "RV1" H 3100 8250 50  0000 R CNN
 F 1 "1M" H 3100 8100 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2800 8150 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 2800 8150 50  0001 C CNN
 F 3 "~" H 2800 8150 50  0001 C CNN
+F 4 "Bourns" H 2800 8150 50  0001 C CNN "MFN"
+F 5 "3386F-1-105TLF" H 2800 8150 50  0001 C CNN "MFP"
+F 6 "3386X-1-105TLF-ND" H 2800 8150 50  0001 C CNN "Digi-Key"
+F 7 " 652-3386F-1-105TLF " H 2800 8150 50  0001 C CNN "Mouser"
 	1    2800 8150
 	1    0    0    -1  
 $EndComp
@@ -1626,7 +1630,7 @@ U 1 1 60B28047
 P 12100 1550
 F 0 "RV2" H 12000 1600 50  0000 R CNN
 F 1 "10k?" H 12000 1500 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 12100 1550 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 12100 1550 50  0001 C CNN
 F 3 "~" H 12100 1550 50  0001 C CNN
 	1    12100 1550
 	1    0    0    -1  
@@ -1818,8 +1822,8 @@ L Device:R_POT RV3
 U 1 1 61207659
 P 12250 2000
 F 0 "RV3" H 12150 2050 50  0000 R CNN
-F 1 "10k?" H 12150 1950 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 12250 2000 50  0001 C CNN
+F 1 "10k" H 12150 1950 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 12250 2000 50  0001 C CNN
 F 3 "~" H 12250 2000 50  0001 C CNN
 	1    12250 2000
 	1    0    0    1   
@@ -3255,19 +3259,19 @@ Wire Wire Line
 Connection ~ 11050 9450
 Connection ~ 11500 9450
 Wire Bus Line
-	9650 900  9650 3550
-Wire Bus Line
 	9200 800  9200 2150
 Wire Bus Line
-	14000 900  14000 2550
+	6900 800  6900 2150
+Wire Bus Line
+	7300 800  7300 2850
 Wire Bus Line
 	4900 800  4900 2850
 Wire Bus Line
-	6900 800  6900 2150
+	14000 900  14000 2550
+Wire Bus Line
+	9650 900  9650 3550
 Wire Bus Line
 	4200 800  4200 4950
 Wire Bus Line
 	11700 800  11700 5500
-Wire Bus Line
-	7300 800  7300 2850
 $EndSCHEMATC
