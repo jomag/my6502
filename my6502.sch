@@ -2911,9 +2911,9 @@ Wire Wire Line
 Wire Wire Line
 	14350 6450 14400 6450
 Wire Wire Line
-	9100 8450 9800 8450
+	9100 8450 9450 8450
 Wire Wire Line
-	9100 9450 9800 9450
+	9100 9450 9450 9450
 Wire Wire Line
 	14350 6450 14350 6250
 Wire Wire Line
@@ -3274,4 +3274,10 @@ Wire Bus Line
 	4200 800  4200 4950
 Wire Bus Line
 	11700 800  11700 5500
+Connection ~ 9450 8450
+Wire Wire Line
+	9450 8450 9800 8450
+Connection ~ 9450 9450
+Wire Wire Line
+	9450 9450 9800 9450
 $EndSCHEMATC
